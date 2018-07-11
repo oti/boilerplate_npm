@@ -1,0 +1,12 @@
+.header {
+  @at-root {
+    & {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .header__inner {
+
+    }
+  }
+}

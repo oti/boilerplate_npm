@@ -1,0 +1,24 @@
+.btn {
+  @at-root {
+    & {
+      margin: auto;
+      width: vw(518);
+      height: vw(100);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid c(base);
+      font-family: 'Montserrat';
+      font-size: vw(42);
+      line-height: 0.73;
+      &:link,
+      &:visited,
+      &:hover,
+      &:focus,
+      &:active {
+        color: c(base);
+        text-decoration: none;
+      }
+    }
+  }
+}

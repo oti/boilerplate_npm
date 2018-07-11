@@ -1,0 +1,32 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+  font-family:-apple-system, BlinkMacSystemFont, 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Yu Gothic', Meiryo, メイリオ, sans-serif;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ol,ul {
+  list-style: none inside;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}

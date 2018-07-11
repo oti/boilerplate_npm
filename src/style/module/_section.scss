@@ -1,0 +1,102 @@
+.section {
+  @at-root {
+    & {
+      padding: vw(120) 0;
+      width: 100vw;
+
+      &.-green {
+        background-color: c(green);
+      }
+      &.-red {
+        background-color: c(red);
+      }
+      &.-yellow {
+        background-color: c(yellow);
+      }
+    }
+
+    .section__inner {
+      margin: auto;
+      width: vw(630);
+    }
+
+    .section__title {
+      font-family: 'Montserrat';
+      font-size: vw(77);
+      line-height: 0.73; //アセンダとディセンダ抜きの高さ（目grep）
+      text-align: center;
+    }
+
+    .section__title2 {
+      margin-top: vw(50);
+      font-family: 'Montserrat';
+      font-size: vw(42);
+      line-height: (54/42);
+      text-align: center;
+    }
+
+    .section__banner {
+      display: flex;
+      flex-direction: column;
+      margin-top: vw(80);
+      @include min {
+        flex-direction: row;
+      }
+    }
+
+    .section__photo {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .section__logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: vw(346);
+      background-color: #fff;
+
+      img {
+        &.logo-little-darling {
+          width: vw(424);
+        }
+        &.logo-solso-park {
+          width: vw(414);
+        }
+        &.logo-all-good-flowers {
+          width: vw(428);
+        }
+        &.logo-lifork {
+          width: vw(242);
+        }
+      }
+    }
+
+    .section__logoInner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      &:nth-last-child(2) {
+        height: vw(170);
+      }
+      &:nth-child(2) {
+        border-top: vw(6) solid c(red);
+        height: vw(170);
+      }
+    }
+
+    .section__text {
+      margin-top: vw(50);
+      text-align: center;
+    }
+
+    .section__link {
+      margin-top: vw(180);
+    }
+  }
+}

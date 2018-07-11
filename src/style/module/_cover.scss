@@ -1,0 +1,17 @@
+.cover {
+  @at-root {
+    & {
+      width: 100vw;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      &.-head {
+        background-image: url(/image/bg_1.png);
+      }
+      &.-foot {
+        background-image: url(/image/bg_2.png);
+      }
+    }
+  }
+}
