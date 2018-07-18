@@ -15,6 +15,7 @@
     "server": "browser-sync start --server 'htdocs/' --files 'htdocs/' --startPath '' --port '3000'",
     "clean": "rimraf htdocs/{image/*,style/*,script/*}",
     "copy:favicon": "cpx 'src/favicon.ico' 'htdocs/'",
+    "copy:what-input": "cpx 'node_modules/what-input/dist/what-input.min.js' 'htdocs/script/'",
     "copy:slick_js": "cpx 'node_modules/slick-carousel/slick/slick.min.js' 'htdocs/script/'",
     "copy:slick_gif": "cpx 'node_modules/slick-carousel/slick/ajax-loader.gif' 'htdocs/style/'",
     "copy:slick_font": "cpx 'node_modules/slick-carousel/slick/fonts/*' 'htdocs/style/fonts/'",
@@ -55,6 +56,7 @@
     "easing-sass-function": "^1.1.0",
     "jquery": "^3.3.1",
     "slick-carousel": "^1.8.1",
-    "smooth-gradient-sass-function": "^1.0.0"
+    "smooth-gradient-sass-function": "^1.0.0",
+    "what-input": "^5.1.0"
   }
 }
