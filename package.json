@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "easing-sass-function": "^1.1.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "slick-carousel": "^1.8.1",
     "smooth-gradient-sass-function": "^1.0.0",
     "what-input": "^5.1.0"
