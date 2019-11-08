@@ -1,4 +1,4 @@
-# TKG Static Boilerplate
+# Boilerplate Static Web Dev
 
 ## 開発
 

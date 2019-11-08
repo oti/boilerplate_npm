@@ -1,10 +1,10 @@
 {
-  "name": "tkg-static-biolerplate",
+  "name": "boilerplate_static-web-dev",
   "version": "1.0.0",
   "description": "",
   "author": "oti",
   "license": "MIT",
-  "repository": "git@github.com:oti/tkg-static-biolerplate.git",
+  "repository": "git@github.com:oti/boilerplate_static-web-dev.git",
   "scripts": {
     "prestart": "npm run build",
     "start": "npm-run-all -p watch server",
