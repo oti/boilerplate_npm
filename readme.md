@@ -9,6 +9,8 @@ npm start
 
 ## ビルド環境
 
+No Gulp, Use npm run-script.
+
 - HTML：EJS
 - CSS：Sass, Autoprefixer, MQPacker
 - JS：トランスパイルなし
