@@ -1,6 +1,6 @@
 {
   "name": "boilerplate_static-web-dev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "oti",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "copy:font": "cpx 'src/font/*' 'htdocs/font/'",
     "build": "npm run clean & npm-run-all -p build:* & npm run ejs & npm-run-all -p copy:*",
     "build:sass": "npm-run-all sass autoprefixer",
-    "build:js": "uglifyjs src/script/script-core.js --compress -o htdocs/script/script.js",
+    "build:js": "uglifyjs src/script/script.js --compress -o htdocs/script/script.js",
     "build:image": "imagemin src/image/* -o htdocs/image",
     "watch": "npm-run-all -p watch:*",
     "watch:sass": "chokidar 'src/style/' -pc 'npm run build:sass'",
