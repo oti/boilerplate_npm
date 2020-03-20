@@ -1,0 +1,11 @@
+<nav class="Sns" aria-describedby="SnsDescribe">
+  <h2 class="Sns__heading" id="SnsDescribe"><%= data.sitename %>をSNSでシェア</h2>
+  <ul class="Sns__list">
+    <li class="Sns__item">
+      <a href="https://twitter.com/intent/tweet?text=<%= data.sitename %>&url=<%= data.permalink %>" class="Sns__link" target="_blank" rel="noopener">ツイートする</a>
+    </li>
+    <li class="Sns__item">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=<%= data.permalink %>" class="Sns__link" target="_blank" rel="noopener">Facebookでシェアする</a>
+    </li>
+  </ul>
+</nav>

@@ -1,18 +1,21 @@
-# Boilerplate Static Web Dev
+# Boilerplate Static Web Dev v2
 
-## 開発
+- [v1](tree/1.0.2/): EJS, Sass, Autoprefixer, mq-packer, uglifyjs(**non-bundle, non-compile**)
+- [v2](tree/master): EJS, Sass, Autoprefixer, mq-packer, **typescript, webpack**
+
+## Getting Started
+
+Node v12.16.1
 
 ```bash
-npm i
+npm ci
 npm start
 ```
 
-## ビルド環境
+## Build
 
-No Gulp, Use npm run-script.
+```bash
+npm run build
+```
 
-- HTML：EJS
-- CSS：Sass, Autoprefixer, MQPacker
-- JS：トランスパイルなし
-
-`src/` 配下におく。ビルドすると `htdocs/` に配置される。
+output to `dist/`.
