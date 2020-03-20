@@ -1,7 +1,7 @@
 # Boilerplate Static Web Dev v2
 
-- v1: EJS, Sass, Autoprefixer, mq-packer, uglifyjs(**non-bundle, non-compile**)
-- v2: EJS, Sass, Autoprefixer, mq-packer, **typescript, webpack**
+- [v1](tree/1.0.2/): EJS, Sass, Autoprefixer, mq-packer, uglifyjs(**non-bundle, non-compile**)
+- [v2](tree/master): EJS, Sass, Autoprefixer, mq-packer, **typescript, webpack**
 
 ## Getting Started
 
