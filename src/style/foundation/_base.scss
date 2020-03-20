@@ -1,31 +1,51 @@
 :root {
-  font-size: 10px;
+  --space: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline-offset: 2px
 }
 
 body {
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: unset;
-  font-family:-apple-system, BlinkMacSystemFont, 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Yu Gothic', Meiryo, メイリオ, sans-serif;
+  font-size: 1rem;
+}
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+mark {
+  background-color: transparent
 }
 
 img {
-  vertical-align: bottom;
+  -ms-interpolation-mode: bicubic;
+  border: 0 none;
+  text-decoration: none;
+  vertical-align: top;
+  background-color: transparent;
 }
 
-ol,ul {
+li {
   list-style: none inside;
 }
 
 a {
   &:link,
-  &:visited,
+  &:visited {
+    text-decoration: none;
+  }
   &:hover,
-  &:focus,
+  &:focus {
+    text-decoration: underline;
+  }
   &:active {
     text-decoration: none;
   }
