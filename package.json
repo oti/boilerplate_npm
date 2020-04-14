@@ -28,6 +28,7 @@
     "lint:html": "markuplint dist/**/*.html --ruleset ./markuplintrc",
     "lint:css": "stylelint dist/style/*",
     "validate:html": "html-validator --file=dist/index.html --verbose",
+    "test": "npm-run-all -p lint:* validate:html",
     "watch": "npm-run-all -p watch:*",
     "watch:json": "chokidar 'src/json/data.json' -pc 'npm run build:html'",
     "watch:html": "chokidar 'src/html/' -pc 'npm run build:html'",
