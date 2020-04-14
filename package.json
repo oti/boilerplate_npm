@@ -23,6 +23,7 @@
     "build:css": "npm-run-all sass autoprefixer mqpacker",
     "build:js": "webpack",
     "build:image": "npm run imagemin",
+    "lint:html": "markuplint dist/**/*.html --ruleset ./markuplintrc",
     "validate:html": "html-validator --file=dist/index.html --verbose",
     "watch": "npm-run-all -p watch:*",
     "watch:json": "chokidar 'src/json/data.json' -pc 'npm run build:html'",
