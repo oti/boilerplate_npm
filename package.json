@@ -21,13 +21,13 @@
     "imagemin": "imagemin src/image/**/* -o dist/image/",
     "build:html": "npm run ejs",
     "build:css": "npm-run-all sass autoprefixer mqpacker",
-    "build:js": "npm run webpack",
+    "build:js": "webpack",
     "build:image": "npm run imagemin",
     "watch": "npm-run-all -p watch:*",
     "watch:json": "chokidar 'src/json/data.json' -pc 'npm run build:html'",
     "watch:html": "chokidar 'src/html/' -pc 'npm run build:html'",
     "watch:css": "chokidar 'src/style/' -pc 'npm run build:css'",
-    "watch:js": "chokidar 'src/script/' -pc 'npm run build:js -- --mode development'",
+    "watch:js": "chokidar 'src/script/' -pc 'webpack --mode development'",
     "watch:image": "chokidar 'src/image/' -i '**/*.DS_Store' -c 'npm run build:image'"
   },
   "browserslist": [
