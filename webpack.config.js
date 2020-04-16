@@ -1,21 +1,21 @@
 module.exports = {
-  mode: 'production',
+  mode: "production",
   entry: {
-    script: './src/script/script.ts'
+    script: "./src/script/script.ts",
   },
   output: {
-    filename: '[name].js',
-    path: __dirname + '/dist/script'
+    filename: "[name].js",
+    path: __dirname + "/dist/script",
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: 'ts-loader'
-      }
-    ]
+        use: "ts-loader",
+      },
+    ],
   },
   resolve: {
-    extensions: ['.ts']
-  }
+    extensions: [".ts"],
+  },
 };
