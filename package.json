@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate_static-web-dev",
-  "version": "2.2.1",
+  "name": "web-dev-boilerplate_npm-run-script",
+  "version": "2.2.2",
   "description": "",
   "author": "oti",
   "license": "MIT",
-  "repository": "git@github.com:oti/boilerplate_static-web-dev.git",
+  "repository": "git@github.com:oti/web-dev-boilerplate_npm-run-script.git",
   "scripts": {
     "prestart": "npm run build",
     "start": "npm-run-all -p watch serve",
@@ -39,9 +39,9 @@
   },
   "browserslist": [
     "last 2 versions",
-    "ie >= 10",
-    "Android >= 4",
-    "iOS >= 7"
+    "ie > 9",
+    "Android > 3",
+    "iOS > 6"
   ],
   "devDependencies": {
     "autoprefixer": "^8.6.5",
