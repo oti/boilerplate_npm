@@ -54,7 +54,7 @@ module.exports = {
 };
 ```
 
-`@babel/preset-env` などはなくてもIE11対応できました。何かおかしかったら issue へお願いします。
+`@babel/preset-env` などはなくても IE11 対応できました。何かおかしかったら issue へお願いします。
 
 ## development
 
