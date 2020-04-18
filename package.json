@@ -1,10 +1,45 @@
 {
+  "private": true,
   "name": "web-dev-boilerplate_npm-run-script",
   "version": "2.2.2",
-  "description": "",
-  "author": "oti",
-  "license": "MIT",
-  "repository": "git@github.com:oti/web-dev-boilerplate_npm-run-script.git",
+  "description": "タスクランナーを使わずに npm run-script でビルドするウェブサイト開発環境のボイラープレートです。",
+  "main": "",
+  "browserslist": [
+    "last 2 versions",
+    "ie > 9",
+    "Android > 3",
+    "iOS > 6"
+  ],
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "intersection-observer": "^0.9.0",
+    "normalize.css": "^8.0.1",
+    "regenerator-runtime": "^0.13.5",
+    "what-input": "^5.2.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "browser-sync": "^2.26.7",
+    "chokidar-cli": "^1.2.3",
+    "cpx": "^1.5.0",
+    "css-mqpacker": "^6.0.2",
+    "csso-cli": "^3.0.0",
+    "ejs-cli": "^2.1.1",
+    "html-validator-cli": "^7.0.0",
+    "imagemin-cli": "^5.1.0",
+    "markuplint": "^1.0.0-alpha.38",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^5.0.1",
+    "prettier": "^2.0.4",
+    "rimraf": "^2.7.1",
+    "stylelint": "^13.3.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
   "scripts": {
     "prestart": "npm run build",
     "start": "npm-run-all -p watch serve",
@@ -25,7 +60,7 @@
     "build:css": "npm-run-all sass autoprefixer mqpacker csso postbuild:css",
     "build:js": "webpack",
     "build:image": "npm run imagemin",
-    "prettier-fix": "prettier --write .",
+    "prettier:fix": "prettier --write .",
     "lint:html": "markuplint dist/**/*.html --ruleset ./markuplintrc",
     "lint:css": "stylelint dist/style/*",
     "validate:html": "html-validator --file=dist/index.html --verbose",
@@ -37,40 +72,14 @@
     "watch:js": "chokidar 'src/script/' -pc 'webpack --mode development'",
     "watch:image": "chokidar 'src/image/' -i '**/*.DS_Store' -c 'npm run build:image'"
   },
-  "browserslist": [
-    "last 2 versions",
-    "ie > 9",
-    "Android > 3",
-    "iOS > 6"
-  ],
-  "devDependencies": {
-    "autoprefixer": "^8.6.5",
-    "browser-sync": "^2.26.7",
-    "chokidar-cli": "^1.2.3",
-    "core-js": "^3.6.5",
-    "cpx": "^1.5.0",
-    "css-mqpacker": "^6.0.2",
-    "csso-cli": "^3.0.0",
-    "ejs-cli": "^2.1.1",
-    "html-validator-cli": "^7.0.0",
-    "imagemin-cli": "^5.1.0",
-    "markuplint": "^1.0.0-alpha.38",
-    "node-sass": "^4.13.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^5.0.1",
-    "prettier": "^2.0.4",
-    "regenerator-runtime": "^0.13.5",
-    "rimraf": "^2.7.1",
-    "stylelint": "^13.3.2",
-    "stylelint-config-recommended": "^3.0.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oti/boilerplate_static-web-dev.git"
   },
-  "dependencies": {
-    "intersection-observer": "^0.9.0",
-    "normalize.css": "^8.0.1",
-    "what-input": "^5.2.7"
-  }
+  "author": "oti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oti/boilerplate_static-web-dev/issues"
+  },
+  "homepage": "https://github.com/oti/boilerplate_static-web-dev#readme"
 }
