@@ -3,7 +3,7 @@
   "name": "web-dev-boilerplate_npm-run-script",
   "version": "2.2.2",
   "description": "タスクランナーを使わずに npm run-script でビルドするウェブサイト開発環境のボイラープレートです。",
-  "main": "",
+  "main": "index.html",
   "browserslist": [
     "last 2 versions",
     "ie > 9",
@@ -74,12 +74,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oti/boilerplate_static-web-dev.git"
+    "url": "git+https://github.com/oti/web-dev-boilerplate_npm-run-script.git"
   },
   "author": "oti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oti/boilerplate_static-web-dev/issues"
+    "url": "https://github.com/oti/web-dev-boilerplate_npm-run-script/issues"
   },
-  "homepage": "https://github.com/oti/boilerplate_static-web-dev#readme"
+  "homepage": "https://github.com/oti/web-dev-boilerplate_npm-run-script#readme"
 }

@@ -1,5 +1,5 @@
 // for IE11
-import 'intersection-observer'
+import "intersection-observer";
 
 /**
  * InView :

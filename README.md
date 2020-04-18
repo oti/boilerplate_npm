@@ -54,7 +54,7 @@ module.exports = {
 };
 ```
 
-`@babel/preset-env` などはなくてもIE11対応できました。何かおかしかったら issue へお願いします。
+`@babel/preset-env` などはなくても IE11 対応できました。何かおかしかったら issue へお願いします。
 
 ## development
 
@@ -70,7 +70,7 @@ npm start
 
 `localhost:3000` が起動します。
 
-## Build
+## build
 
 ```bash
 npm run build
@@ -78,8 +78,24 @@ npm run build
 
 `dist/` にビルドされます。
 
-## Test
+## test
 
 ```bash
 npm run test
 ```
+
+- markuplint
+- stylelint
+- html-validator
+
+が実行されます。
+
+## format
+
+```bash
+npm run prettier:fix
+```
+
+`prettier --write .` が実行されます。
+
+設定ファイルはありません。Prettier のデフォルトに従います。
