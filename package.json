@@ -48,7 +48,7 @@
     "serve": "browser-sync start --server 'dist/' --files 'dist/' --startPath '' --port '3000'",
     "copy:favicon": "cpx 'src/favicon.ico' 'dist/'",
     "copy:what-input": "cpx 'node_modules/what-input/dist/what-input.min.js' 'dist/script/'",
-    "ejs": "ejs-cli -b src/html/pages/ -f '**/**.ejs' -o 'dist/' -O 'src/json/data.json'",
+    "ejs": "ejs-cli -b src/html/pages/ -f **/*.ejs -o dist -O src/json/data.json",
     "sass": "node-sass src/style/style.scss dist/style/tmp.css --indent-width 2",
     "autoprefixer": "postcss --use autoprefixer -r dist/style/tmp.css",
     "mqpacker": "mqpacker --sort dist/style/tmp.css",
