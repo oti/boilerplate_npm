@@ -12,13 +12,11 @@ dependencies の過不足は適宜処理してください。
 
 ## [v2.x](../../tree/master)
 
-- HTML: EJS
+- HTML: EJS, Pug
 - CSS: Sass, Autoprefixer, mq-packer
 - JS: **TypesSript, Babel, webpack**
 
-どういう理屈かわかりませんが .babelrc ファイルは不要です。
-
-IE11 は JS のエントリーポイントに
+JS の IE11 対応はエントリーポイントに
 
 ```
 // for IE11

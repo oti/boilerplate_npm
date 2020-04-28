@@ -1,0 +1,11 @@
+-
+  const encoded_sitename = encodeURIComponent(data.sitename)
+  const encoded_permalink = encodeURIComponent(data.permalink)
+
+nav
+  h2 #{data.sitename}をSNSでシェア
+  ul
+    li
+      a(href=`https://twitter.com/intent/tweet?text=${encoded_sitename}&amp;url=${encoded_permalink}`, target="_blank", rel="noopener") ツイートする
+    li
+      a(href=`https://www.facebook.com/sharer/sharer.php?u=${encoded_permalink}`, target="_blank", rel="noopener") Facebookでシェアする

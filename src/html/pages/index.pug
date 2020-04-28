@@ -1,0 +1,20 @@
+-
+  const _title = ""
+  const _sitename = data.sitename
+  const _desc = ""
+  const _keywords = ""
+  const _class = "top"
+  const _host = data.permalink
+  const _pagePath = ""
+  const _permalink = _host+_pagePath
+doctype html
+html(lang="ja")
+  head
+    include ../_partial/meta
+
+  body(class=_class)
+    include ../_partial/header
+
+    include ../_partial/share
+
+    include ../_partial/footer
