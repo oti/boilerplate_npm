@@ -4,12 +4,6 @@
   "version": "2.2.3",
   "description": "タスクランナーを使わずに npm run-script でビルドするウェブサイト開発環境のボイラープレートです。",
   "main": "index.html",
-  "browserslist": [
-    "last 2 versions",
-    "ie > 9",
-    "Android > 3",
-    "iOS > 6"
-  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "intersection-observer": "^0.9.0",
