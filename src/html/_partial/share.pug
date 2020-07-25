@@ -6,6 +6,14 @@ nav
   h2 #{data.sitename}をSNSでシェア
   ul
     li
-      a(href=`https://twitter.com/intent/tweet?text=${encoded_sitename}&amp;url=${encoded_permalink}`, target="_blank", rel="noopener") ツイートする
+      a(
+        href=`https://twitter.com/intent/tweet?text=${encoded_sitename}&amp;url=${encoded_permalink}`,
+        target="_blank",
+        rel="noopener"
+      ) ツイートする
     li
-      a(href=`https://www.facebook.com/sharer/sharer.php?u=${encoded_permalink}`, target="_blank", rel="noopener") Facebookでシェアする
+      a(
+        href=`https://www.facebook.com/sharer/sharer.php?u=${encoded_permalink}`,
+        target="_blank",
+        rel="noopener"
+      ) Facebookでシェアする
