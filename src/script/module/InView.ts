@@ -1,6 +1,3 @@
-// for IE11
-import "intersection-observer";
-
 /**
  * InView :
  *   要素が画面に入ったらCSSクラスをつける
