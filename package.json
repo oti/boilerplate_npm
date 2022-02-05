@@ -10,7 +10,6 @@
     "clean": "rimraf dist",
     "serve": "browser-sync start --server dist --files dist --startPath '' --port 3000",
     "copy:favicon": "cpx src/favicon.ico dist",
-    "copy:what-input": "cpx node_modules/what-input/dist/what-input.min.js dist/script/",
     "ejs": "ejs-cli -b src/html/pages/ -f **/*.ejs -o dist -O src/json/data.json",
     "pug": "pug src/html/pages/ -o dist -O src/json/data.json -P",
     "sass": "node-sass src/style/style.scss dist/style/tmp.css --indent-width 2",
@@ -37,9 +36,6 @@
     "watch:js": "chokidar src/script/ -pc 'webpack --mode development'",
     "watch:image": "chokidar src/image/ -i **/*.DS_Store -c 'npm run build:image'",
     "prepare": "husky install"
-  },
-  "dependencies": {
-    "what-input": "^5.2.10"
   },
   "devDependencies": {
     "@prettier/plugin-pug": "^1.19.2",
