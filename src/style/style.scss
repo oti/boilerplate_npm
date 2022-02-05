@@ -7,10 +7,12 @@
 @import "config/function";
 
 // 下地
-@import "foundation/font-face";
+@import "foundation/font";
+@import "foundation/reset";
 @import "foundation/base";
 
 // モジュール
-@import "module/visuallyHidden";
+@import "module/header";
 @import "module/btn";
-@import "module/section";
+@import "module/dummyBox";
+@import "module/visuallyHidden";

@@ -1,9 +1,0 @@
-.Section {
-  padding: var(--space);
-}
-
-.Section__inner {
-  & + * {
-    margin-top: var(--space);
-  }
-}

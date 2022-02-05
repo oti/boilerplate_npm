@@ -1,28 +1,17 @@
-:root {
-  --space: 1rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
-:focus {
-  outline-offset: 2px;
-}
-
 body {
-  font-size: 1rem;
+  font-family: $ff_ja;
+  color: c(base);
+  hanging-punctuation: allow-end;
 }
 
-mark {
-  background-color: transparent;
+main {
+  display: block;
 }
 
 img {
@@ -30,23 +19,9 @@ img {
   border: 0 none;
   text-decoration: none;
   vertical-align: top;
+  background: transparent;
+}
+
+mark {
   background-color: transparent;
-}
-
-li {
-  list-style: none inside;
-}
-
-a {
-  &:link,
-  &:visited {
-    text-decoration: none;
-  }
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-  &:active {
-    text-decoration: none;
-  }
 }

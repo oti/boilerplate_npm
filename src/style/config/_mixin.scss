@@ -1,30 +1,20 @@
-// MediaQueries
-@mixin max($bp: 767px) {
-  @media (max-width: $bp) {
-    @content;
-  }
-}
-@mixin min($bp: 768px) {
+// $bp の値を含む。$bp の値以上の画面幅のときを示す
+@mixin orMore($bp) {
   @media (min-width: $bp) {
     @content;
   }
 }
-@mixin minmax($min, $max) {
-  @media (min-width: $min) and (max-width: $max) {
+
+// $bp の値を含まない。$bp の値未満の画面幅のときを示す
+@mixin lessThan($bp) {
+  @media not all and (min-width: $bp) {
     @content;
   }
 }
 
-@mixin hover($brightness: 120%) {
-  transition: opacity 0.3s ease(easeOutSine);
-  @supports (top: 0) {
-    transition-property: filter;
-  }
-  &:hover {
-    opacity: 0.7;
-    @supports (top: 0) {
-      opacity: 1;
-      filter: brightness($brightness);
-    }
+// $min の値と $max の値を含んだ範囲の画面幅のときを示す
+@mixin within($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
   }
 }
