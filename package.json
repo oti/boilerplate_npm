@@ -39,7 +39,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1",
     "what-input": "^5.2.10"
   },
   "devDependencies": {
