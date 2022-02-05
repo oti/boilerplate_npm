@@ -3,20 +3,22 @@
  *   要素が画面に入ったらCSSクラスをつける
  */
 export class InView {
-  targetElement: NodeListOf<HTMLElement>;
-  showName: string;
+  activeName: string;
+  targetName: string;
   observer: IntersectionObserver;
+  targetElement: NodeListOf<HTMLElement>;
 
   constructor() {
-    this.targetElement = document.querySelectorAll("[data-inview]");
-    this.showName = "-show";
+    this.activeName = "-shown";
+    this.targetName = "[data-inview]";
+    this.targetElement = document.querySelectorAll(this.targetName);
     this.observer = new IntersectionObserver(
       (observes: IntersectionObserverEntry[]) => {
         this.observeTarget(observes);
       },
       {
         // 0だと1pxでも画面に入った瞬間に、1だと全て画面に入ったら isInteresting = true になる
-        threshold: [0],
+        threshold: [0.5],
       }
     );
   }
@@ -35,11 +37,11 @@ export class InView {
   observeTarget(observes: IntersectionObserverEntry[]) {
     observes.forEach((observe) => {
       if (observe.isIntersecting) {
-        observe.target.classList.add(this.showName);
+        observe.target.classList.add(this.activeName);
         // 監視をやめる
-        this.observer.unobserve(observe.target);
-        // } else {
-        //   observe.target.classList.remove('-show')
+        // this.observer.unobserve(observe.target);
+      } else {
+        observe.target.classList.remove(this.activeName);
       }
     });
   }
