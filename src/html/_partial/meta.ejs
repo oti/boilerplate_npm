@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <title><%= data.sitename %></title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta property="og:title" content="">
@@ -13,6 +13,8 @@
   <meta property="og:site_name" content="">
 
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/asset/style/style.css?<%= new Date().getTime().toString().substr(0, 9) %>">
   <link rel="canonical" href="<%= data.permalink %>">
+
+  <script src="/asset/script/script.js?<%= new Date().getTime().toString().substr(0, 9) %>"></script>
 </head>
