@@ -9,12 +9,17 @@
   const _permalink = _host+_pagePath
 doctype html
 html(lang="ja")
-  head
-    include ../_partial/meta
+  include ../_partial/meta
 
   body(class=_class)
     include ../_partial/header
 
     include ../_partial/share
+
+    main.Main
+      .DummyBox(data-inview)
+        p ダミーテキスト
+      .DummyBox(data-inview)
+        p ダミーテキスト
 
     include ../_partial/footer
