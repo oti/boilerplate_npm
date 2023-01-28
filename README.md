@@ -60,18 +60,18 @@ module.exports = {
 
 ## [v3.x](../../tree/main)
 
-Node.js v16.13.2 利用
+Node.js v18.13.0 利用
 
 - HTML: EJS, Pug
 - CSS: node-sass, Autoprefixer, mq-packer, csso
 - JS: **TypesSript, Babel, webpack**
 
-依存技術は v2 と変わりません。実行環境が Node v16 なだけです。
+依存技術は v2 と変わりません。実行環境が Node v18 なだけです。
 
 ## development
 
 ```bash
-ndenv install 16.13.2
+ndenv install 18.13.0
 ndenv rehash
 ```
 
@@ -93,21 +93,18 @@ npm run build
 ## test
 
 ```bash
-npm run test
+npm test
 ```
 
 - markuplint
 - stylelint
-- html-validator
 
 が実行されます。
 
 ## format
 
 ```bash
-npm run prettier:fix
+npm run pretty-quick
 ```
-
-`prettier --write .` が実行されます。
 
 設定ファイルはありません。Prettier のデフォルトに従います。
