@@ -1,4 +1,37 @@
 {
+  "nodeRules": [
+    {
+      "selector": "html[prefix]",
+      "rules": {
+        "invalid-attr": {
+          "options": {
+            "attrs": {
+              "prefix": {
+                "type": "Any"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "selector": "meta[property]",
+      "rules": {
+        "invalid-attr": {
+          "options": {
+            "attrs": {
+              "property": {
+                "type": "Any"
+              },
+              "content": {
+                "type": "Any"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "rules": {
     "attr-duplication": true,
     "attr-value-quotes": true,
@@ -27,7 +60,7 @@
     "no-refer-to-non-existent-id": true,
     "no-use-event-handler-attr": true,
     "permitted-contents": true,
-    "required-attr": true,
+    "required-attr": false, // meta[property] に [name] がなくても良いとする例外が作れないので一旦 false
     "required-element": false,
     "required-h1": true,
     "use-list": false,
