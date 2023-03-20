@@ -39,7 +39,7 @@
   "devDependencies": {
     "@prettier/plugin-pug": "^2.4.1",
     "autoprefixer": "^10.4.13",
-    "browser-sync": "^2.27.11",
+    "browser-sync": "^2.29.0",
     "chokidar-cli": "^3.0.0",
     "cpx": "^1.5.0",
     "css-mqpacker": "^6.0.2",
