@@ -2,6 +2,7 @@
   "data": {
     "sitename": "npm run-script Web Dev Boilerplate",
     "permalink": "https://example-sitename.com",
-    "author": "oti"
+    "author": "oti",
+    "keywords": "キー,ワー,ド"
   }
 }
