@@ -21,14 +21,15 @@
           "options": {
             "attrs": {
               "property": {
-                "type": "Any"
+                "pattern": "/^og:.+/"
               },
               "content": {
-                "type": "Any"
+                "type": "NoEmptyAny"
               }
             }
           }
-        }
+        },
+        "required-attr": false
       }
     }
   ],
@@ -60,7 +61,7 @@
     "no-refer-to-non-existent-id": true,
     "no-use-event-handler-attr": true,
     "permitted-contents": true,
-    "required-attr": false, // meta[property] に [name] がなくても良いとする例外が作れないので一旦 false
+    "required-attr": true,
     "required-element": false,
     "required-h1": true,
     "use-list": false,
