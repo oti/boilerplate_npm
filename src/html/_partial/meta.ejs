@@ -3,14 +3,14 @@
   <title><%= data.sitename %></title>
 
   <meta name="viewport" content="width=device-width">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
+  <meta name="keywords" content="<%= data.sitename %>">
+  <meta name="description" content="デスクリプション">
+  <meta property="og:title" content="<%= data.sitename %>">
+  <meta property="og:description" content="デスクリプション">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<%= data.permalink %>">
+  <meta property="og:image" content="/asset/image/black.png">
+  <meta property="og:site_name" content="<%= data.sitename %>">
 
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="/asset/style/style.css?<%= new Date().getTime().toString().substr(0, 9) %>">
