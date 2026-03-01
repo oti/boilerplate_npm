@@ -1,3 +1,6 @@
+@use "../config/index" as *;
+
 .Btn {
   font-size: inherit;
+  @extend %reset-Button;
 }

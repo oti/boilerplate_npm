@@ -1,19 +1,16 @@
 @charset 'UTF-8';
 
 // scssコンパイル用メタファイル
-@import "config/var";
-@import "config/placeholder";
-@import "config/mixin";
-@import "config/function";
+@use "config/index";
 
 // 下地
-@import "foundation/font";
-@import "foundation/reset";
-@import "foundation/base";
+@use "foundation/font";
+@use "foundation/reset";
+@use "foundation/base";
 
 // モジュール
-@import "module/header";
-@import "module/btn";
-@import "module/sns";
-@import "module/dummyBox";
-@import "module/visuallyHidden";
+@use "module/header";
+@use "module/btn";
+@use "module/sns";
+@use "module/dummyBox";
+@use "module/visuallyHidden";
