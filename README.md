@@ -4,7 +4,7 @@
 
 dependencies の過不足は適宜処理してください。
 
-## [v1.x](../../tree/1.0.2/)
+## [v1.0.2](https://github.com/oti/boilerplate_npm/releases/tag/1.0.2)
 
 Node.js v8.11.3 利用
 
@@ -12,7 +12,7 @@ Node.js v8.11.3 利用
 - CSS: Sass, Autoprefixer, mq-packer
 - JS: uglifyjs(**non-bundle, non-compile**)
 
-## [v2.x](../../tree/2.5.0)
+## [v2.5.0](https://github.com/oti/boilerplate_npm/releases/tag/2.5.0)
 
 Node.js v12.18.0 利用
 
@@ -58,7 +58,7 @@ module.exports = {
 
 `@babel/preset-env` などはなくても IE11 対応できました。何かおかしかったら issue へお願いします。
 
-## [v3.x](../../tree/main)
+## [v3.4.0](https://github.com/oti/boilerplate_npm/releases/tag/3.4.0)
 
 Node.js v18.13.0 利用
 
@@ -68,10 +68,18 @@ Node.js v18.13.0 利用
 
 依存技術は v2 と変わりません。実行環境が Node v18 なだけです。
 
+## [v4.x](https://github.com/oti/boilerplate_npm/releases/tag/4.0.0)
+
+Node.js v24.14.0 利用
+
+- HTML: EJS, Pug
+- CSS: sass, Autoprefixer, mq-packer, csso
+- JS: **TypesSript, Babel, webpack**
+
 ## development
 
 ```bash
-ndenv install 18.13.0
+ndenv install 24.14.0
 ndenv rehash
 ```
 
