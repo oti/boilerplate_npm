@@ -34,7 +34,7 @@
     "watch:css": "chokidar src/style/ -pc 'npm run build:css'",
     "watch:js": "chokidar src/script/ -pc 'webpack --mode development'",
     "watch:image": "chokidar src/image/ -i .DS_Store -c 'npm run build:image'",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@prettier/plugin-pug": "^3.4.2",
